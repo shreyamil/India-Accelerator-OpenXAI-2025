@@ -7,6 +7,7 @@ export async function sendMessage(message: string): Promise<string> {
     body: JSON.stringify({ message }),
   });
 
+  
   if (!res.ok) {
     throw new Error("Failed to send message");
   }
